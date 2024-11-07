@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_17d1009cf30a2712300df8b4a2f34d41 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_17d1009cf30a2712300df8b4a2f34d41" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_17d1009cf30a2712300df8b4a2f34d41 = L.map(
+                "map_17d1009cf30a2712300df8b4a2f34d41",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9aa775958660d3bf02a36d6de2854aaa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9aa775958660d3bf02a36d6de2854aaa.addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var marker_7dab3b72202d8c742f81c58d38bf37f5 = L.marker(
+                [37.0902, -95.7129],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_f340b0cbc3db015cb4021acaf7ec7d91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7dab3b72202d8c742f81c58d38bf37f5.setIcon(icon_f340b0cbc3db015cb4021acaf7ec7d91);
+        
+    
+        var popup_ee4469c03394004482b7600311505c69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18338c1de6060974827535c3bc4e1773 = $(`<div id="html_18338c1de6060974827535c3bc4e1773" style="width: 100.0%; height: 100.0%;">USA - 100 athletes</div>`)[0];
+                popup_ee4469c03394004482b7600311505c69.setContent(html_18338c1de6060974827535c3bc4e1773);
+            
+        
+
+        marker_7dab3b72202d8c742f81c58d38bf37f5.bindPopup(popup_ee4469c03394004482b7600311505c69)
+        ;
+
+        
+    
+    
+            var marker_63fb85d94d610243188e1649ea9fe9c6 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_4cd3f431dbb8f8bf847acfac497f1b38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_63fb85d94d610243188e1649ea9fe9c6.setIcon(icon_4cd3f431dbb8f8bf847acfac497f1b38);
+        
+    
+        var popup_750d06634b7507176890d57104d3475b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f644ff0a5d204e02d9380aa8f479603a = $(`<div id="html_f644ff0a5d204e02d9380aa8f479603a" style="width: 100.0%; height: 100.0%;">GBR - 80 athletes</div>`)[0];
+                popup_750d06634b7507176890d57104d3475b.setContent(html_f644ff0a5d204e02d9380aa8f479603a);
+            
+        
+
+        marker_63fb85d94d610243188e1649ea9fe9c6.bindPopup(popup_750d06634b7507176890d57104d3475b)
+        ;
+
+        
+    
+    
+            var marker_fdd21460b63bbcee423749af1d14af68 = L.marker(
+                [46.6034, 1.8883],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_991793c9dc4cfcfbf442119e23fbd09b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdd21460b63bbcee423749af1d14af68.setIcon(icon_991793c9dc4cfcfbf442119e23fbd09b);
+        
+    
+        var popup_832237215b5e353fc5099263d5961b6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39749c61a390d4f1a7602ba7cfee5442 = $(`<div id="html_39749c61a390d4f1a7602ba7cfee5442" style="width: 100.0%; height: 100.0%;">FRA - 70 athletes</div>`)[0];
+                popup_832237215b5e353fc5099263d5961b6c.setContent(html_39749c61a390d4f1a7602ba7cfee5442);
+            
+        
+
+        marker_fdd21460b63bbcee423749af1d14af68.bindPopup(popup_832237215b5e353fc5099263d5961b6c)
+        ;
+
+        
+    
+    
+            var marker_0e507155ca95a77f0090e7e54536381e = L.marker(
+                [56.1304, -106.3468],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_d3c2b9a093d4587ad4c171c422a69a96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e507155ca95a77f0090e7e54536381e.setIcon(icon_d3c2b9a093d4587ad4c171c422a69a96);
+        
+    
+        var popup_3ee924d0cdba715dbaf6f2ca193d441b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40d4f26334dcd0dc0a77ad30daa69022 = $(`<div id="html_40d4f26334dcd0dc0a77ad30daa69022" style="width: 100.0%; height: 100.0%;">CAN - 60 athletes</div>`)[0];
+                popup_3ee924d0cdba715dbaf6f2ca193d441b.setContent(html_40d4f26334dcd0dc0a77ad30daa69022);
+            
+        
+
+        marker_0e507155ca95a77f0090e7e54536381e.bindPopup(popup_3ee924d0cdba715dbaf6f2ca193d441b)
+        ;
+
+        
+    
+    
+            var marker_6ad38ac9a5dcdd759bbfd7573b98b712 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_59fd3aa95e1293c9aa84bbdef4675d7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6ad38ac9a5dcdd759bbfd7573b98b712.setIcon(icon_59fd3aa95e1293c9aa84bbdef4675d7e);
+        
+    
+        var popup_624849fbebf3146554730684eb9cd015 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_777e8d960af9d0f3d28712d58d0974a9 = $(`<div id="html_777e8d960af9d0f3d28712d58d0974a9" style="width: 100.0%; height: 100.0%;">ITA - 50 athletes</div>`)[0];
+                popup_624849fbebf3146554730684eb9cd015.setContent(html_777e8d960af9d0f3d28712d58d0974a9);
+            
+        
+
+        marker_6ad38ac9a5dcdd759bbfd7573b98b712.bindPopup(popup_624849fbebf3146554730684eb9cd015)
+        ;
+
+        
+    
+    
+            var marker_49b59a0e09509c058252ac80f4a3851b = L.marker(
+                [-1.2921, 36.8219],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_cf483f5f3c2850b9e641c6416240defa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49b59a0e09509c058252ac80f4a3851b.setIcon(icon_cf483f5f3c2850b9e641c6416240defa);
+        
+    
+        var popup_c58165a33bc1b3e41d0fb1002eb271c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69f8f11c55478107145a596d455e4248 = $(`<div id="html_69f8f11c55478107145a596d455e4248" style="width: 100.0%; height: 100.0%;">NBO - 5 athletes</div>`)[0];
+                popup_c58165a33bc1b3e41d0fb1002eb271c9.setContent(html_69f8f11c55478107145a596d455e4248);
+            
+        
+
+        marker_49b59a0e09509c058252ac80f4a3851b.bindPopup(popup_c58165a33bc1b3e41d0fb1002eb271c9)
+        ;
+
+        
+    
+    
+            var marker_299eef1544b0c963e7d3e359f7c895b3 = L.marker(
+                [15.5523, 48.5164],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_76f28408e8237fba14646702ca77d637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_299eef1544b0c963e7d3e359f7c895b3.setIcon(icon_76f28408e8237fba14646702ca77d637);
+        
+    
+        var popup_5d46999a28f2abebf510f126f6e6f006 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d60ddaf95467044d5f5dfd10051fbdf = $(`<div id="html_8d60ddaf95467044d5f5dfd10051fbdf" style="width: 100.0%; height: 100.0%;">YMD - 3 athletes</div>`)[0];
+                popup_5d46999a28f2abebf510f126f6e6f006.setContent(html_8d60ddaf95467044d5f5dfd10051fbdf);
+            
+        
+
+        marker_299eef1544b0c963e7d3e359f7c895b3.bindPopup(popup_5d46999a28f2abebf510f126f6e6f006)
+        ;
+
+        
+    
+    
+            var marker_158eb48a460e9f90812d1d426b5f03f4 = L.marker(
+                [6.8777, 31.307],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_aa2ed5c764c44de54f243291f907a66d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_158eb48a460e9f90812d1d426b5f03f4.setIcon(icon_aa2ed5c764c44de54f243291f907a66d);
+        
+    
+        var popup_8b5e9b8a7bbfc4e6da7fb6bdb9722a3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9bbc51eebd3a6cb05ab82cde63be321 = $(`<div id="html_b9bbc51eebd3a6cb05ab82cde63be321" style="width: 100.0%; height: 100.0%;">SSD - 2 athletes</div>`)[0];
+                popup_8b5e9b8a7bbfc4e6da7fb6bdb9722a3c.setContent(html_b9bbc51eebd3a6cb05ab82cde63be321);
+            
+        
+
+        marker_158eb48a460e9f90812d1d426b5f03f4.bindPopup(popup_8b5e9b8a7bbfc4e6da7fb6bdb9722a3c)
+        ;
+
+        
+    
+    
+            var marker_150129e13db0b71eead8a34ff48ab2ee = L.marker(
+                [-7.1095, 177.6493],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_11803ebcacd4dc96c4400563f9a8f125 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_150129e13db0b71eead8a34ff48ab2ee.setIcon(icon_11803ebcacd4dc96c4400563f9a8f125);
+        
+    
+        var popup_d942c73fa874b0b7c4b41cbab67acb8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d4341a277f0baab3cf65106b8b82e8f = $(`<div id="html_1d4341a277f0baab3cf65106b8b82e8f" style="width: 100.0%; height: 100.0%;">TUV - 1 athletes</div>`)[0];
+                popup_d942c73fa874b0b7c4b41cbab67acb8a.setContent(html_1d4341a277f0baab3cf65106b8b82e8f);
+            
+        
+
+        marker_150129e13db0b71eead8a34ff48ab2ee.bindPopup(popup_d942c73fa874b0b7c4b41cbab67acb8a)
+        ;
+
+        
+    
+    
+            var marker_a42971c81353f29e0753951cb9288f52 = L.marker(
+                [15.5523, 48.5164],
+                {}
+            ).addTo(map_17d1009cf30a2712300df8b4a2f34d41);
+        
+    
+            var icon_5d69b913b44f422d3f8e414c8f780d72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a42971c81353f29e0753951cb9288f52.setIcon(icon_5d69b913b44f422d3f8e414c8f780d72);
+        
+    
+        var popup_96bb1cec58ac12a319e8c67c8d7ec4e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b00e20507bcdb0736d833e1ff4c20465 = $(`<div id="html_b00e20507bcdb0736d833e1ff4c20465" style="width: 100.0%; height: 100.0%;">YAR - 1 athletes</div>`)[0];
+                popup_96bb1cec58ac12a319e8c67c8d7ec4e4.setContent(html_b00e20507bcdb0736d833e1ff4c20465);
+            
+        
+
+        marker_a42971c81353f29e0753951cb9288f52.bindPopup(popup_96bb1cec58ac12a319e8c67c8d7ec4e4)
+        ;
+
+        
+    
+</script>
+</html>
